@@ -6,7 +6,7 @@
 必须需要下面插件
 
 ```
-npm install hexo-deployer-git –-save
+npm install --save hexo-deployer-git
 ```
 
 ## 百度和google 收录
