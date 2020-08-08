@@ -142,7 +142,7 @@
 </nav>
 
     <div class="view intro-2" id="background" parallax=true
-         style="background: url('https://i.loli.net/2020/08/03/FcprxLuK91QkVhe.jpg') no-repeat center center;
+         style="background: url('https://i.loli.net/2020/08/08/fuwrIi3lJZXxMEg.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -175,6 +175,50 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2019/10/14/laravel-a-li-yun-duan-xin-fa-song/">Laravel 阿里云短信发送</a>
+
+      <a href="/2019/10/14/laravel-a-li-yun-duan-xin-fa-song/" class="index-excerpt">
+        
+        
+          
+        
+        <div>有东西被加密了, 请输入密码查看.</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2019-10-14
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/PHP/">PHP</a>
+            
+              <a href="/categories/PHP/Laravel/">Laravel</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/PHP/">PHP</a>
+            
+              <a href="/tags/Laravel/">Laravel</a>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
 
   <div class="row mx-auto index-card">
     
@@ -578,46 +622,6 @@ WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动�
     </div>
   </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/06/16/ji-lu-yi-xia-wang-github-li-mian-git-push-peng-dao-de-ji-ge-wen-ti/">记录往Github `git push` 几个问题</a>
-
-      <a href="/2019/06/16/ji-lu-yi-xia-wang-github-li-mian-git-push-peng-dao-de-ji-ge-wen-ti/" class="index-excerpt">
-        
-        
-          
-        
-        <div>引言本来是想把做的一些前端项目上传到 github 上面进行储存一份但是之前没建立过本地仓库和git仓库之间的使用，引发下面问题：  </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-06-16
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Github/">Github</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Github/">Github</a>
-            
-          </div>
-        
-      </div>
-    </div>
-  </div>
-
 
 
   <nav aria-label="navigation">
@@ -673,11 +677,35 @@ WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动�
   
 
   
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'true' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"平胸女子","artist":"枯木逢春","url":"https://m10.music.126.net/20200808145609/77b2b0831ef2c3aaf1d88ccf1e864c79/yyaac/000e/530c/045f/7d5c5ec360df60fe445035076cc112d6.m4a"},{"name":"忽然之间（Cover 莫文蔚）","artist":"田新宇","url":"https://m701.music.126.net/20200808145912/c97971abc0ffa348acc23fc3e246f75c/jdyyaac/5509/010b/055c/bc6344e5706a91b3020b26c017565f09.m4a"}]
+    });
+  }
+</script>
+
+  
 
   
 
   <footer class="mt-5">
   <div class="text-center py-3">
+    <!-- 网站运行状态 -->
     <div>
       <span id="timeDate">载入天数...</span>
       <span id="times">载入时分秒...</span>
@@ -709,6 +737,7 @@ WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动�
       setInterval("createtime()",250);
       </script>
     </div>
+    <!-- 版权所有 -->
     <div>
       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
       <i class="iconfont icon-love"></i>
