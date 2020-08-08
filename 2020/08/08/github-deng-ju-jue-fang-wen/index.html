@@ -17,10 +17,19 @@
   <meta name="description" content="">
   <meta name="author" content="Pwdsec">
   <meta name="keywords" content="">
-  <title>Pwdsec Blog&#39;s</title>
+  <title>github等拒绝访问 - Pwdsec Blog&#39;s</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/lib/hint/hint.min.css" />
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+  
+
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -42,7 +51,7 @@
 
 
 <body>
-  <header style="height: 100vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -142,7 +151,7 @@
 </nav>
 
     <div class="view intro-2" id="background" parallax=true
-         style="background: url('https://i.loli.net/2020/08/03/FcprxLuK91QkVhe.jpg') no-repeat center center;
+         style="background: url('https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -152,12 +161,50 @@
             </span>
 
             
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-08-08 12:47">
+      2020年8月8日 下午
+    </time>
+  </div>
+
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      105 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      1
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
           
         </div>
       </div>
@@ -166,465 +213,126 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>这几天在我的笔记本上出现一个问题，<code>hexo pages</code> 搭建到 <code>github</code> 上的博客竟然打不开了。</p>
+<p>我抓紧用手机连上wifi打开试试，发现并没有什么问题。</p>
+<a id="more"></a>
+
+<p>但是PC端总是出现以下情况</p>
+<p><img src="https://i.loli.net/2020/08/08/oEBSrQzUktJ96j2.png" srcset="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/img/loading.gif" alt="GitHub等拒绝访问 - 1"></p>
+<p><img src="https://i.loli.net/2020/08/08/dNGSs8URCrHABmJ.png" srcset="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/img/loading.gif" alt="GitHub等拒绝访问 - 2"></p>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>最后发现是dns的问题，本地修改dns配置如图：</p>
+<p><img src="https://i.loli.net/2020/08/08/PQTfH5BO4nhzRjl.png" srcset="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/img/loading.gif" alt="dns修改"></p>
+<p>最后打开自己的博客，就可以正常访问了!</p>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
                 
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Hexo/">Hexo</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Github/">Github</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Hexo/">Hexo</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2020/08/03/git-chu-shi-hua-pei-zhi/">
+                        <span class="hidden-mobile">git初始化配置</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
 
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/06/14/tu-pian-lang-can-kao-ge-shi-xie-fa/">图片廊参考格式写法</a>
-
-      <a href="/2019/06/14/tu-pian-lang-can-kao-ge-shi-xie-fa/" class="index-excerpt">
-        
-        
-          
-        
-        <div>之前写了的一个页面，里面有图片廊，但是写的有问题  </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-06-14
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
             
-              <a href="/categories/Web/">Web</a>
-            
-              <a href="/categories/Web/HTML/">HTML</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/CSS/">CSS</a>
-            
-              <a href="/tags/HTML/">HTML</a>
-            
-          </div>
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/06/14/dirhunt-yi-kuan-wu-xu-jin-xing-bao-li-po-jie-gong-ji-ji-ke-mei-ju-web-fu-wu-qi-mu-lu-de-gong-ju/">Dirhunt：一款无需进行暴力破解攻击即可枚举Web服务器目录的工具</a>
-
-      <a href="/2019/06/14/dirhunt-yi-kuan-wu-xu-jin-xing-bao-li-po-jie-gong-ji-ji-ke-mei-ju-web-fu-wu-qi-mu-lu-de-gong-ju/" class="index-excerpt">
-        
-        
-          
-        
-        <div>介绍的是一款名叫Dirhunt的工具，它无需进行暴力破解即可帮助你枚举出目标Web服务器的目录。</div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-06-14
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Tools/">Tools</a>
-            
-              <a href="/categories/Tools/Dirhunt/">Dirhunt</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Dirhunt/">Dirhunt</a>
-            
-          </div>
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/06/14/r3con1z3r-yi-ge-qing-liang-ji-de-web-xin-xi-shou-ji-gong-ju/">R3con1z3r一个轻量级的Web信息收集工具</a>
-
-      <a href="/2019/06/14/r3con1z3r-yi-ge-qing-liang-ji-de-web-xin-xi-shou-ji-gong-ju/" class="index-excerpt">
-        
-        
-          
-        
-        <div>R3con1z3r是一个轻量级的Web信息收集工具，具有用python编写的直观功能。它提供了一个强大的环境，可以快速，彻底地进行开源智能（OSINT）基于Web的足迹。</div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-06-14
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Tools/">Tools</a>
-            
-              <a href="/categories/Tools/R3con1z3r/">R3con1z3r</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/R3con1z3r/">R3con1z3r</a>
-            
-          </div>
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/06/14/yong-live2d-rang-kan-ban-miao-ru-zhu-ni-de-hexo-bo-ke/">用Live2D让看板喵入住你的Hexo博客</a>
-
-      <a href="/2019/06/14/yong-live2d-rang-kan-ban-miao-ru-zhu-ni-de-hexo-bo-ke/" class="index-excerpt">
-        
-        
-          
-        
-        <div>这个插件在我还有腾讯云服务器用Typecho搭建博客的时候用过一次.  
-真的是被这个插件萌化了…  
-折腾了会发现配置这个其实挺简单的  </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-06-14
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Hexo/">Hexo</a>
-            
-              <a href="/categories/Hexo/Live2D/">Live2D</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Hexo/">Hexo</a>
-            
-              <a href="/tags/Live2D/">Live2D</a>
-            
-          </div>
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/06/14/hexo-bo-ke-chang-yong-cha-jian-ji-jiao-cheng/">Hexo博客常用插件及教程</a>
-
-      <a href="/2019/06/14/hexo-bo-ke-chang-yong-cha-jian-ji-jiao-cheng/" class="index-excerpt">
-        
-        
-          
-        
-        <div>
-为大家总结下hexo常用的插件与教程合理的使用插件能够提高hexo的效率 
-</div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-06-14
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Hexo/">Hexo</a>
-            
-              <a href="/categories/Hexo/Hexo/">Hexo</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Hexo/">Hexo</a>
-            
-          </div>
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/06/05/img-biao-qian-zai-div-zhong-chui-zhi-ju-zhong-shi-yong-position-lai-shi-xian/">img标签在div中垂直居中使用position来实现</a>
-
-      <a href="/2019/06/05/img-biao-qian-zai-div-zhong-chui-zhi-ju-zhong-shi-yong-position-lai-shi-xian/" class="index-excerpt">
-        
-        
-          
-        
-        <div>img标签如果在div中垂直居中</div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-06-05
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Web/">Web</a>
-            
-              <a href="/categories/Web/CSS/">CSS</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/CSS/">CSS</a>
-            
-          </div>
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/06/05/qian-duan-tu-pian-lang-de-chang-yong-san-chong-xie-fa/">前端图片廊的常用三种写法</a>
-
-      <a href="/2019/06/05/qian-duan-tu-pian-lang-de-chang-yong-san-chong-xie-fa/" class="index-excerpt">
-        
-        
-          
-        
-        <div>朋友给写的三种常用的图片廊写法，真的挺好用的写个文章备用下。 </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-06-05
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Web/">Web</a>
-            
-              <a href="/categories/Web/HTML/">HTML</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/CSS/">CSS</a>
-            
-              <a href="/tags/HTML/">HTML</a>
-            
-          </div>
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/05/31/bootstrap-pai-ban-yang-shi/">Bootstrap排版样式</a>
-
-      <a href="/2019/05/31/bootstrap-pai-ban-yang-shi/" class="index-excerpt">
-        
-        
-          
-        
-        <div>今天学习了Bootstrap全局css样式中得排版样式，包括页面主体、标题、内联文本元素、对齐、大小写、缩略语、地址文本、引用文本、列表排版、代码。</div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-05-31
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Web/">Web</a>
-            
-              <a href="/categories/Web/Bootstrap/">Bootstrap</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Bootstrap/">Bootstrap</a>
-            
-          </div>
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/05/19/mei-ci-hexo-g-d-hou-master-fen-zhi-zhong-cname-jiu-xu-yao-shou-dong-chuang-jian-jie-jue-fang-an/">每次hexo g -d后，master分支中CNAME就需要手动创建解决方案</a>
-
-      <a href="/2019/05/19/mei-ci-hexo-g-d-hou-master-fen-zhi-zhong-cname-jiu-xu-yao-shou-dong-chuang-jian-jie-jue-fang-an/" class="index-excerpt">
-        
-        
-          
-        
-        <div>在使用hexo g -d命令发布网站的时候，仓库会被重新覆盖</div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-05-19
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Hexo/">Hexo</a>
-            
-              <a href="/categories/Hexo/Hexo/">Hexo</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Hexo/">Hexo</a>
-            
-          </div>
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/05/19/github-zhi-qian-jin-ru-zheng-chang-sui-hou-fang-wen-bu-liao-jie-jue-fang-an/">Github之前进入正常，随后访问不了解决方案</a>
-
-      <a href="/2019/05/19/github-zhi-qian-jin-ru-zheng-chang-sui-hou-fang-wen-bu-liao-jie-jue-fang-an/" class="index-excerpt">
-        
-        
-          
-        
-        <div>其实就是修改本地hostswindows和linux文件路径贴出来:  </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-05-19
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Github/">Github</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Github/">Github</a>
-            
-          </div>
-        
-      </div>
-    </div>
-  </div>
-
-
-
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/2/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/"><i class="iconfont icon-arrowright"></i></a>
-    </span>
-  </nav>
-  
-  <script>
-    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
-      ele.href += '#board';
+              <!-- Comments -->
+              <div class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "hF3ws2eL3Tjy0LaPpL7tAAwh-gzGzoHsz",
+          app_key: "JCm51YPepluhpKtsAnF50gl3",
+          placeholder: "给我的文章加点评论吧~",
+          path: window.location.pathname,
+          avatar: "monsterid",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
     }
+    createObserver(loadValine, 'vcomments');
   </script>
-
+  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
 
 
               </div>
-            </div>
+            
           </div>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
   </main>
 
@@ -873,10 +581,10 @@
       }
 
       // 如果是文章，请求文章的浏览数，并自增
-      if ('false' === 'true') {
+      if ('true' === 'true') {
         var viewCtn = document.querySelector('#leancloud-post-views-container');
         if (viewCtn || enableIncr) {
-          var target = decodeURI('/page/3/index.html');
+          var target = decodeURI('/2020/08/08/github-deng-ju-jue-fang-wen/');
           var viewGetter = getRecord(Counter, target).then((record) => {
             incrArr.push(buildIncrement(record.objectId))
             if (viewCtn) {
@@ -938,6 +646,31 @@
 
 
 
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: 'article.markdown-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
 
 
   <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
@@ -945,7 +678,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "慢慢沉淀下来 不浮不躁 &nbsp;",
+        "github等拒绝访问&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -960,6 +693,21 @@
 
 
 
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
 
 
   <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/js/local-search.js" ></script>
@@ -973,6 +721,20 @@
   </script>
 
 
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
 
 
 

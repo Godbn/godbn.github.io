@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>github等拒绝访问</title>
+    <link href="/2020/08/08/github-deng-ju-jue-fang-wen/"/>
+    <url>/2020/08/08/github-deng-ju-jue-fang-wen/</url>
+    
+    <content type="html"><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>这几天在我的笔记本上出现一个问题，<code>hexo pages</code> 搭建到 <code>github</code> 上的博客竟然打不开了。</p><p>我抓紧用手机连上wifi打开试试，发现并没有什么问题。</p><a id="more"></a><p>但是PC端总是出现以下情况</p><p><img src="https://i.loli.net/2020/08/08/oEBSrQzUktJ96j2.png" alt="GitHub等拒绝访问 - 1"></p><p><img src="https://i.loli.net/2020/08/08/dNGSs8URCrHABmJ.png" alt="GitHub等拒绝访问 - 2"></p><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>最后发现是dns的问题，本地修改dns配置如图：</p><p><img src="https://i.loli.net/2020/08/08/PQTfH5BO4nhzRjl.png" alt="dns修改"></p><p>最后打开自己的博客，就可以正常访问了!</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Hexo</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Github</tag>
+      
+      <tag>Hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>git初始化配置</title>
     <link href="/2020/08/03/git-chu-shi-hua-pei-zhi/"/>
     <url>/2020/08/03/git-chu-shi-hua-pei-zhi/</url>
