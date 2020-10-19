@@ -1,7 +1,7 @@
+
+
 <!DOCTYPE html>
-<html lang="zh-CN">
-
-
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
 
 
 
@@ -25,19 +25,20 @@
 
 <!-- 主题依赖的图标库，不要自行修改 -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
 
 
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
 
 
-<link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/css/main.css" />
+<link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/css/main.css" />
 
 <!-- 自定义样式保持在最底部 -->
 
 
-  <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/js/utils.js" ></script>
+  <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/js/utils.js" ></script>
+  <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/js/color-schema.js" ></script>
 <meta name="generator" content="Hexo 5.0.0"></head>
 
 
@@ -74,38 +75,35 @@
           
           
           
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="iconfont icon-books"></i>
-                文章
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                
-                  
-                  
-                  
-                  <a class="dropdown-item" href="/archives">
-                    <i class="iconfont icon-archive-fill"></i>
-                    归档
-                  </a>
-                
-                  
-                  
-                  
-                  <a class="dropdown-item" href="/categories">
-                    <i class="iconfont icon-category-fill"></i>
-                    分类
-                  </a>
-                
-                  
-                  
-                  
-                  <a class="dropdown-item" href="/tags">
-                    <i class="iconfont icon-tags-fill"></i>
-                    标签
-                  </a>
-                
-              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
             </li>
           
         
@@ -135,8 +133,14 @@
         
         
           <li class="nav-item" id="search-btn">
-            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
-                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
           </li>
         
       </ul>
@@ -144,12 +148,12 @@
   </div>
 </nav>
 
-    <div class="view intro-2" id="background" parallax=true
+    <div class="banner intro-2" id="background" parallax=true
          style="background: url('https://cdn.pwdsec.top/home.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="container text-center white-text fadeInUp">
+          <div class="container page-header text-center fade-in-up">
             <span class="h2" id="subtitle">
               
             </span>
@@ -182,21 +186,29 @@
   <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/10/14/laravel-a-li-yun-duan-xin-fa-song/">Laravel 阿里云短信发送</a>
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/10/14/laravel-a-li-yun-duan-xin-fa-song/">Laravel 阿里云短信发送</a>
+      </h1>
 
-      <a href="/2019/10/14/laravel-a-li-yun-duan-xin-fa-song/" class="index-excerpt">
-        
-        
+      <p class="index-excerpt">
+        <a href="/2019/10/14/laravel-a-li-yun-duan-xin-fa-song/">
           
-        
-        <div>有东西被加密了, 请输入密码查看.</div>
-      </a>
+          
+            
+          
+          有东西被加密了, 请输入密码查看.
+        </a>
+      </p>
 
       <div class="index-btm post-metas">
         
           <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-10-14
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-10-14 11:03" pubdate>
+              2019-10-14
+            </time>
           </div>
         
         
@@ -220,27 +232,35 @@
           </div>
         
       </div>
-    </div>
+    </article>
   </div>
 
   <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/10/02/laravel-tian-jia-zi-ding-yi-zi-duan/">Laravel 添加自定义字段</a>
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/10/02/laravel-tian-jia-zi-ding-yi-zi-duan/">Laravel 添加自定义字段</a>
+      </h1>
 
-      <a href="/2019/10/02/laravel-tian-jia-zi-ding-yi-zi-duan/" class="index-excerpt">
-        
-        
+      <p class="index-excerpt">
+        <a href="/2019/10/02/laravel-tian-jia-zi-ding-yi-zi-duan/">
           
-        
-        <div>有东西被加密了, 请输入密码查看.</div>
-      </a>
+          
+            
+          
+          有东西被加密了, 请输入密码查看.
+        </a>
+      </p>
 
       <div class="index-btm post-metas">
         
           <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-10-02
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-10-02 15:03" pubdate>
+              2019-10-02
+            </time>
           </div>
         
         
@@ -264,30 +284,38 @@
           </div>
         
       </div>
-    </div>
+    </article>
   </div>
 
   <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/10/02/npm-wu-fa-an-zhuang-ku-jie-jue-fang-an/">npm无法安装库解决方案</a>
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/10/02/npm-wu-fa-an-zhuang-ku-jie-jue-fang-an/">npm无法安装库解决方案</a>
+      </h1>
 
-      <a href="/2019/10/02/npm-wu-fa-an-zhuang-ku-jie-jue-fang-an/" class="index-excerpt">
-        
-        
+      <p class="index-excerpt">
+        <a href="/2019/10/02/npm-wu-fa-an-zhuang-ku-jie-jue-fang-an/">
           
-        
-        <div>问题：运行npm install hexo -g 出现错误npm ERR! Response timeout while trying to fetch https://registry.npmjs.org/acorn (over 30000ms)
+          
+            
+          
+          问题：运行npm install hexo -g 出现错误npm ERR! Response timeout while trying to fetch https://registry.npmjs.org/acorn (over 30000ms)
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     C:\Users</div>
-      </a>
+npm ERR!     C:\Users
+        </a>
+      </p>
 
       <div class="index-btm post-metas">
         
           <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-10-02
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-10-02 15:03" pubdate>
+              2019-10-02
+            </time>
           </div>
         
         
@@ -309,27 +337,35 @@ npm ERR!     C:\Users</div>
           </div>
         
       </div>
-    </div>
+    </article>
   </div>
 
   <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/08/02/laravel-huo-qu-shang-chuan-wen-jian-da-xiao-zai-qian-duan-xian-shi/">Laravel 获取上传文件大小在前端显示</a>
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/08/02/laravel-huo-qu-shang-chuan-wen-jian-da-xiao-zai-qian-duan-xian-shi/">Laravel 获取上传文件大小在前端显示</a>
+      </h1>
 
-      <a href="/2019/08/02/laravel-huo-qu-shang-chuan-wen-jian-da-xiao-zai-qian-duan-xian-shi/" class="index-excerpt">
-        
-        
+      <p class="index-excerpt">
+        <a href="/2019/08/02/laravel-huo-qu-shang-chuan-wen-jian-da-xiao-zai-qian-duan-xian-shi/">
           
-        
-        <div>有东西被加密了, 请输入密码查看.</div>
-      </a>
+          
+            
+          
+          有东西被加密了, 请输入密码查看.
+        </a>
+      </p>
 
       <div class="index-btm post-metas">
         
           <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-08-02
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-08-02 15:05" pubdate>
+              2019-08-02
+            </time>
           </div>
         
         
@@ -353,27 +389,35 @@ npm ERR!     C:\Users</div>
           </div>
         
       </div>
-    </div>
+    </article>
   </div>
 
   <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/07/21/mo-gai-maupassant-zhu-ti/">魔改Maupassant主题</a>
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/07/21/mo-gai-maupassant-zhu-ti/">魔改Maupassant主题</a>
+      </h1>
 
-      <a href="/2019/07/21/mo-gai-maupassant-zhu-ti/" class="index-excerpt">
-        
-        
+      <p class="index-excerpt">
+        <a href="/2019/07/21/mo-gai-maupassant-zhu-ti/">
           
-        
-        <div>前言最近找到了一份工作，一直在忙，没时间更新。</div>
-      </a>
+          
+            
+          
+          前言最近找到了一份工作，一直在忙，没时间更新。
+        </a>
+      </p>
 
       <div class="index-btm post-metas">
         
           <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-07-21
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-07-21 10:23" pubdate>
+              2019-07-21
+            </time>
           </div>
         
         
@@ -397,28 +441,36 @@ npm ERR!     C:\Users</div>
           </div>
         
       </div>
-    </div>
+    </article>
   </div>
 
   <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/06/26/chao-hao-yong-de-wow.js-animate.css-wang-zhan-dong-hua-te-xiao/">超好用的WOW.js+Animate.css网站动画特效</a>
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/06/26/chao-hao-yong-de-wow.js-animate.css-wang-zhan-dong-hua-te-xiao/">超好用的WOW.js+Animate.css网站动画特效</a>
+      </h1>
 
-      <a href="/2019/06/26/chao-hao-yong-de-wow.js-animate.css-wang-zhan-dong-hua-te-xiao/" class="index-excerpt">
-        
-        
+      <p class="index-excerpt">
+        <a href="/2019/06/26/chao-hao-yong-de-wow.js-animate.css-wang-zhan-dong-hua-te-xiao/">
           
-        
-        <div>简介有的页面在向下滚动的时候，有些元素会产生细小的动画效果。虽然动画比较小，但却能吸引你的注意。如果你希望你的页面也更加有趣，那么你可以试试 WOW.js。
-WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动画效果，能满足您的各种需求。</div>
-      </a>
+          
+            
+          
+          简介有的页面在向下滚动的时候，有些元素会产生细小的动画效果。虽然动画比较小，但却能吸引你的注意。如果你希望你的页面也更加有趣，那么你可以试试 WOW.js。
+WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动画效果，能满足您的各种需求。
+        </a>
+      </p>
 
       <div class="index-btm post-metas">
         
           <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-06-26
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-06-26 12:41" pubdate>
+              2019-06-26
+            </time>
           </div>
         
         
@@ -442,29 +494,37 @@ WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动�
           </div>
         
       </div>
-    </div>
+    </article>
   </div>
 
   <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/06/25/ji-gei-zi-ji-bi-ji-ben-qing-hui-he-jian-pan-shang-mian-de-za-wu/">记给自己笔记本清灰和键盘上面得杂物</a>
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/06/25/ji-gei-zi-ji-bi-ji-ben-qing-hui-he-jian-pan-shang-mian-de-za-wu/">记给自己笔记本清灰和键盘上面得杂物</a>
+      </h1>
 
-      <a href="/2019/06/25/ji-gei-zi-ji-bi-ji-ben-qing-hui-he-jian-pan-shang-mian-de-za-wu/" class="index-excerpt">
-        
-        
+      <p class="index-excerpt">
+        <a href="/2019/06/25/ji-gei-zi-ji-bi-ji-ben-qing-hui-he-jian-pan-shang-mian-de-za-wu/">
           
-        
-        <div>准备工具
+          
+            
+          
+          准备工具
 型号：华硕K555LJ(本本垃圾勿喷，当时不懂 头撞墙了买了低电压的)工具：毛刷、吹风机(没有专门清理灰尘得机器，将就着吧)、螺丝刀一套
-</div>
-      </a>
+
+        </a>
+      </p>
 
       <div class="index-btm post-metas">
         
           <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-06-25
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-06-25 22:55" pubdate>
+              2019-06-25
+            </time>
           </div>
         
         
@@ -486,27 +546,35 @@ WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动�
           </div>
         
       </div>
-    </div>
+    </article>
   </div>
 
   <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/06/21/sublime-text-3-3200-license-key-zhu-ce-ma/">Sublime Text 3 3200 + license key注册码</a>
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/06/21/sublime-text-3-3200-license-key-zhu-ce-ma/">Sublime Text 3 3200 + license key注册码</a>
+      </h1>
 
-      <a href="/2019/06/21/sublime-text-3-3200-license-key-zhu-ce-ma/" class="index-excerpt">
-        
-        
+      <p class="index-excerpt">
+        <a href="/2019/06/21/sublime-text-3-3200-license-key-zhu-ce-ma/">
           
-        
-        <div>可用于：Sublime Text 3 Serial key build is 3200 +</div>
-      </a>
+          
+            
+          
+          可用于：Sublime Text 3 Serial key build is 3200 +
+        </a>
+      </p>
 
       <div class="index-btm post-metas">
         
           <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-06-21
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-06-21 13:39" pubdate>
+              2019-06-21
+            </time>
           </div>
         
         
@@ -528,29 +596,37 @@ WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动�
           </div>
         
       </div>
-    </div>
+    </article>
   </div>
 
   <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/06/20/hexo-zhu-ti-maupassant-zeng-jia-canvas-nest-dong-tai-li-zi-xiao-guo/">主题maupassant增加canvas_nest动态粒子效果和不蒜子统计</a>
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/06/20/hexo-zhu-ti-maupassant-zeng-jia-canvas-nest-dong-tai-li-zi-xiao-guo/">主题maupassant增加canvas_nest动态粒子效果和不蒜子统计</a>
+      </h1>
 
-      <a href="/2019/06/20/hexo-zhu-ti-maupassant-zeng-jia-canvas-nest-dong-tai-li-zi-xiao-guo/" class="index-excerpt">
-        
-        
+      <p class="index-excerpt">
+        <a href="/2019/06/20/hexo-zhu-ti-maupassant-zeng-jia-canvas-nest-dong-tai-li-zi-xiao-guo/">
           
-        
-        <div>这个动态粒子效果想搞很久了，但是这个主题给出的配置不行
+          
+            
+          
+          这个动态粒子效果想搞很久了，但是这个主题给出的配置不行
 我是在google上搜索才找到的，某度上搜索的信息太少了
-因为某度对某些网站不爬取 所以搜索不到</div>
-      </a>
+因为某度对某些网站不爬取 所以搜索不到
+        </a>
+      </p>
 
       <div class="index-btm post-metas">
         
           <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-06-20
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-06-20 12:43" pubdate>
+              2019-06-20
+            </time>
           </div>
         
         
@@ -578,27 +654,35 @@ WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动�
           </div>
         
       </div>
-    </div>
+    </article>
   </div>
 
   <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/2019/06/20/vscode-shu-chu-zhong-wen-luan-ma-jie-jue-fang-an/">VScode输出中文乱码解决方案</a>
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/06/20/vscode-shu-chu-zhong-wen-luan-ma-jie-jue-fang-an/">VScode输出中文乱码解决方案</a>
+      </h1>
 
-      <a href="/2019/06/20/vscode-shu-chu-zhong-wen-luan-ma-jie-jue-fang-an/" class="index-excerpt">
-        
-        
+      <p class="index-excerpt">
+        <a href="/2019/06/20/vscode-shu-chu-zhong-wen-luan-ma-jie-jue-fang-an/">
           
-        
-        <div>在使用python进行输出调试的时候发现乱码了</div>
-      </a>
+          
+            
+          
+          在使用python进行输出调试的时候发现乱码了
+        </a>
+      </p>
 
       <div class="index-btm post-metas">
         
           <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;2019-06-20
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-06-20 00:45" pubdate>
+              2019-06-20
+            </time>
           </div>
         
         
@@ -622,7 +706,7 @@ WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动�
           </div>
         
       </div>
-    </div>
+    </article>
   </div>
 
 
@@ -680,74 +764,12 @@ WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动�
   
 
   
-    <!-- APlayer 音乐播放器 -->
-    <div id="aplayer"></div>
-    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
-<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
-<script type="text/javascript">
-  var oldLoadAp = window.onload;
-  window.onload = function () {
-    oldLoadAp && oldLoadAp();
 
-    new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: true,
-      autoplay: 'true' === 'true',
-      loop: 'all',
-      order: 'random',
-      theme: '#b7daff',
-      preload: 'none',
-      audio: [{"name":"平胸女子","artist":"枯木逢春","url":"https://m10.music.126.net/20200808145609/77b2b0831ef2c3aaf1d88ccf1e864c79/yyaac/000e/530c/045f/7d5c5ec360df60fe445035076cc112d6.m4a","cover":"http://p2.music.126.net/415A5Xt3bUegx4vyiY8dNQ==/109951164821961505.jpg?param=130y130"},{"name":"忽然之间（Cover 莫文蔚）","artist":"田新宇","url":"https://m701.music.126.net/20200808145912/c97971abc0ffa348acc23fc3e246f75c/jdyyaac/5509/010b/055c/bc6344e5706a91b3020b26c017565f09.m4a","cover":"http://p1.music.126.net/nvY9GOS_7bmbpB-AeQKagQ==/109951163803920201.jpg"}]
-    });
-  }
-</script>
-
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
   
-
-  
-
-  <footer class="mt-5">
-  <div class="text-center py-3">
-    <!-- 网站运行状态 -->
-    <div>
-      <span id="timeDate">载入天数...</span>
-      <span id="times">载入时分秒...</span>
-      <script>
-      var now = new Date();
-      function createtime(){
-          var grt= new Date("02/14/2015 00:00:00");//此处修改你的建站时间或者网站上线时间
-          now.setTime(now.getTime()+250);
-          days = (now - grt ) / 1000 / 60 / 60 / 24;
-          dnum = Math.floor(days);
-          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
-          hnum = Math.floor(hours);
-          if(String(hnum).length ==1 ){
-              hnum = "0" + hnum;
-          }
-          minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
-          mnum = Math.floor(minutes);
-          if(String(mnum).length ==1 ){
-                    mnum = "0" + mnum;
-          }
-          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-          snum = Math.round(seconds);
-          if(String(snum).length ==1 ){
-                    snum = "0" + snum;
-          }
-          document.getElementById("timeDate").innerHTML = "本站安全运行&nbsp"+dnum+"&nbsp天";
-          document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
-      }
-      setInterval("createtime()",250);
-      </script>
-    </div>
-    <!-- 版权所有 -->
-    <div>
-      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
-      <i class="iconfont icon-love"></i>
-      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
-        <span>Fluid</span></a>
-    </div>
-    
   <div class="statistics">
     
     
@@ -774,7 +796,7 @@ WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动�
   </div>
 
 
-    
+  
   <!-- 备案信息 -->
   <div class="beian">
     <a href="http://beian.miit.gov.cn/" target="_blank"
@@ -783,27 +805,30 @@ WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动�
   </div>
 
 
-    
-  </div>
+  
 </footer>
 
 <!-- SCRIPTS -->
 <script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
 <script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
-<script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/js/debouncer.js" ></script>
-<script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/js/main.js" ></script>
+<script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/js/debouncer.js" ></script>
+<script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/js/main.js" ></script>
 
 <!-- Plugins -->
 
 
   
-    <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/js/lazyload.js" ></script>
+    <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/js/lazyload.js" ></script>
+  
+
+
+
   
 
 
 
   <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
-  <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/js/clipboard-use.js" ></script>
+  <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/js/clipboard-use.js" ></script>
 
 
 
@@ -998,7 +1023,7 @@ WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动�
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "慢慢沉淀下来 不浮不躁 &nbsp;",
+        "慢慢沉淀下来 不浮不躁&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -1015,7 +1040,7 @@ WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动�
 
 
 
-  <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/js/local-search.js" ></script>
+  <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/js/local-search.js" ></script>
   <script>
     var path = "/local-search.xml";
     var inputArea = document.querySelector("#local-search-input");
@@ -1027,61 +1052,6 @@ WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动�
 
 
 
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript">
-      //定义获取词语下标
-      var a_idx = 0;
-      jQuery(document).ready(function ($) {
-        //点击body时触发事件
-        $("body").click(function (e) {
-          //需要显示的词语
-          var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
-          //设置词语给span标签
-          var $i = $("<span/>").text(a[a_idx]);
-          //下标等于原来下标+1  余 词语总数
-          a_idx = (a_idx + 1) % a.length;
-          //获取鼠标指针的位置，分别相对于文档的左和右边缘。
-          //获取x和y的指针坐标
-          var x = e.pageX, y = e.pageY;
-          //在鼠标的指针的位置给$i定义的span标签添加css样式
-          $i.css({
-            "z-index": 999,
-            "top": y - 20,
-            "left": x,
-            "position": "absolute",
-            "font-weight": "bold",
-            "color": rand_color()
-          });
-          // 随机颜色
-          function rand_color() {
-            return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
-          }
-          //在body添加这个标签
-          $("body").append($i);
-          //animate() 方法执行 CSS 属性集的自定义动画。
-          //该方法通过CSS样式将元素从一个状态改变为另一个状态。CSS属性值是逐渐改变的，这样就可以创建动画效果。
-          //详情请看http://www.w3school.com.cn/jquery/effect_animate.asp
-          $i.animate({
-            //将原来的位置向上移动180
-            "top": y - 180,
-            "opacity": 0
-            //1500动画的速度
-          }, 1500, function () {
-            //时间到了自动删除
-            $i.remove();
-          });
-        });
-      })
-      ;
-    </script>
-  
 
 
 
