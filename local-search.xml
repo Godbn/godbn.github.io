@@ -62,7 +62,7 @@
     <link href="/2020/08/03/git-chu-shi-hua-pei-zhi/"/>
     <url>/2020/08/03/git-chu-shi-hua-pei-zhi/</url>
     
-    <content type="html"><![CDATA[<p>初始化一些命令</p><a id="more"></a><pre><code class="hljs git">echo &quot;# 123&quot; &gt;&gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot;git remote add origin git@github.com:Godbn&#x2F;123.gitgit push -u origin master</code></pre>]]></content>
+    <content type="html"><![CDATA[<p>初始化一些命令</p><a id="more"></a><pre class="language-code" data-language="code"><code class="language-code">echo &quot;# 123&quot; &gt;&gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot;git remote add origin git@github.com:Godbn&#x2F;123.gitgit push -u origin master</code></pre>]]></content>
     
     
     <categories>
