@@ -19,25 +19,24 @@
   <meta name="keywords" content="">
   <title>超好用的WOW.js+Animate.css网站动画特效 - Pwdsec Blog&#39;s</title>
 
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
 
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/lib/hint/hint.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.6/lib/hint/hint.min.css" />
 
   
     
     
       
-      
-        
-      
-      <link  rel="stylesheet" href="https://cdn.staticfile.org/prism/1.21.0/themes/prism.min.css" />
-      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
     
   
 
   
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -49,13 +48,17 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
 
 
-<link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/css/main.css" />
+<link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.6/css/main.css" />
 
 <!-- 自定义样式保持在最底部 -->
 
 
-  <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/js/utils.js" ></script>
-  <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/js/color-schema.js" ></script>
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"www.pwdsec.top","root":"/","version":"1.8.6","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"copy_btn":true,"image_zoom":{"enable":true},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"hF3ws2eL3Tjy0LaPpL7tAAwh-gzGzoHsz","app_key":"JCm51YPepluhpKtsAnF50gl3","server_url":"https://hf3ws2el.lc-cn-n1-shared.com"}}};
+  </script>
+  <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.6/js/utils.js" ></script>
+  <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.6/js/color-schema.js" ></script>
 <meta name="generator" content="Hexo 5.0.0"></head>
 
 
@@ -64,7 +67,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>Pwdsec</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>Pwdsec Blog's</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -170,13 +173,18 @@
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="container page-header text-center fade-in-up">
-            <span class="h2" id="subtitle">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="超好用的WOW.js+Animate.css网站动画特效">
               
             </span>
 
             
               <div class="mt-3">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-author" aria-hidden="true"></i>
+      Pwdsec
+    </span>
   
   
     <span class="post-meta">
@@ -193,7 +201,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      431 字
+      432 字
     </span>
   
 
@@ -212,9 +220,9 @@
   
     
       <!-- LeanCloud 统计文章PV -->
-      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+      <span id="leancloud-page-views-container" class="post-meta" style="display: none">
         <i class="iconfont icon-eye" aria-hidden="true"></i>
-        <span id="leancloud-post-views"></span> 次
+        <span id="leancloud-page-views"></span> 次
       </span>
     
   
@@ -239,30 +247,28 @@
     <div class="col-lg-8 nopadding-md">
       <div class="container nopadding-md" id="board-ctn">
         <div class="py-5" id="board">
-          <article class="post-content mx-auto" id="post">
+          <article class="post-content mx-auto">
             <!-- SEO header -->
             <h1 style="display: none">超好用的WOW.js+Animate.css网站动画特效</h1>
             
-            <div class="markdown-body" id="post-body">
+              <p class="note note-info">
+                
+                  本文最后更新于：2020年7月29日 下午
+                
+              </p>
+            
+            <div class="markdown-body">
               <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>有的页面在向下滚动的时候，有些元素会产生细小的动画效果。虽然动画比较小，但却能吸引你的注意。如果你希望你的页面也更加有趣，那么你可以试试 WOW.js。</p>
 <p>WOW.js 依赖 <a target="_blank" rel="noopener" href="https://daneden.github.io/animate.css/">animate.css</a>，所以它支持 animate.css 多达 60 多种的动画效果，能满足您的各种需求。</p>
 <a id="more"></a>
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="引入依赖-animate-css-及-wow-js"><a href="#引入依赖-animate-css-及-wow-js" class="headerlink" title="引入依赖 animate.css 及 wow.js"></a>引入依赖 <code>animate.css</code> 及 <code>wow.js</code></h3><pre><code class="hljs html"><span class="hljs-comment">&lt;!-- animate.css --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- wow.js --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.bootcss.com/wow/1.1.2/wow.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="引入依赖-animate-css-及-wow-js"><a href="#引入依赖-animate-css-及-wow-js" class="headerlink" title="引入依赖 animate.css 及 wow.js"></a>引入依赖 <code>animate.css</code> 及 <code>wow.js</code></h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-comment">&lt;!-- animate.css --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span>&gt;</span><br><br><span class="hljs-comment">&lt;!-- wow.js --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.bootcss.com/wow/1.1.2/wow.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
 <h3 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h3><p>在javascript中进行初始化</p>
-<pre><code class="hljs js"><span class="hljs-keyword">new</span> WOW().init();</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">new</span> WOW().init();<br></code></pre></td></tr></table></figure>
 
 <p>在使用对象添加 <code>class</code></p>
-<pre><code class="hljs html"><span class="hljs-comment">&lt;!-- 方法 --&gt;</span>
-class=&quot;wow + animate&quot;
-
-<span class="hljs-comment">&lt;!-- 示例 --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-6 wow fadeInRight&quot;</span>&gt;</span></code></pre>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-comment">&lt;!-- 方法 --&gt;</span><br>class=&quot;wow + animate&quot;<br><br><span class="hljs-comment">&lt;!-- 示例 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-6 wow fadeInRight&quot;</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
 <h3 id="可用属性"><a href="#可用属性" class="headerlink" title="可用属性"></a>可用属性</h3><ol>
 <li><p>data-wow-duration（动画持续时间）</p>
@@ -278,16 +284,9 @@ class=&quot;wow + animate&quot;
 <p> <code>data-wow-iteration=&quot;10&quot;</code></p>
 </li>
 </ol>
-<h3 id="可自定义配置"><a href="#可自定义配置" class="headerlink" title="可自定义配置"></a>可自定义配置</h3><pre><code class="hljs js"><span class="hljs-keyword">new</span> WOW().init();</code></pre>
+<h3 id="可自定义配置"><a href="#可自定义配置" class="headerlink" title="可自定义配置"></a>可自定义配置</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">new</span> WOW().init();<br></code></pre></td></tr></table></figure>
 <p>如果需要自定义配置，可如下使用：</p>
-<pre><code class="hljs js"><span class="hljs-keyword">var</span> wow = <span class="hljs-keyword">new</span> WOW(&#123;
-    boxClass: <span class="hljs-string">&#x27;wow&#x27;</span>,
-    animateClass: <span class="hljs-string">&#x27;animated&#x27;</span>,
-    offset: <span class="hljs-number">0</span>,
-    mobile: <span class="hljs-literal">true</span>,
-    live: <span class="hljs-literal">true</span>
-&#125;);
-wow.init();</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">var</span> wow = <span class="hljs-keyword">new</span> WOW(&#123;<br>    boxClass: <span class="hljs-string">&#x27;wow&#x27;</span>,<br>    animateClass: <span class="hljs-string">&#x27;animated&#x27;</span>,<br>    offset: <span class="hljs-number">0</span>,<br>    mobile: <span class="hljs-literal">true</span>,<br>    live: <span class="hljs-literal">true</span><br>&#125;);<br>wow.init();<br></code></pre></td></tr></table></figure>
 <p><strong>配置</strong></p>
 <table>
 <thead>
@@ -385,38 +384,6 @@ wow.init();</code></pre>
             </div>
 
             
-              <!-- Comments -->
-              <article class="comments" id="comments">
-                
-                
-  <div id="vcomments"></div>
-  <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "hF3ws2eL3Tjy0LaPpL7tAAwh-gzGzoHsz",
-          app_key: "JCm51YPepluhpKtsAnF50gl3",
-          placeholder: "给我的文章加点评论吧~",
-          path: window.location.pathname,
-          avatar: "monsterid",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
-    }
-    waitElementVisible('vcomments', loadValine);
-  </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
-
-
-              </article>
-            
           </article>
         </div>
       </div>
@@ -425,7 +392,7 @@ wow.init();</code></pre>
       <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
         <div id="toc">
   <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
-  <div id="tocbot"></div>
+  <div class="toc-body" id="toc-body"></div>
 </div>
 
       </div>
@@ -437,16 +404,15 @@ wow.init();</code></pre>
 
 
     
-  </main>
 
-  
-    <a id="scroll-top-button" href="#" role="button">
-      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-    </a>
-  
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
 
-  
-    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
      aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
@@ -467,9 +433,10 @@ wow.init();</code></pre>
     </div>
   </div>
 </div>
-  
+    
 
-  
+    
+  </main>
 
   <footer class="text-center mt-5 py-3">
   <div class="footer-content">
@@ -505,8 +472,11 @@ wow.init();</code></pre>
   
   <!-- 备案信息 -->
   <div class="beian">
-    <a href="http://beian.miit.gov.cn/" target="_blank"
-       rel="nofollow noopener">豫ICP备2020030062号-1</a>
+    <span>
+      <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">
+        豫ICP备2020030062号-1
+      </a>
+    </span>
     
   </div>
 
@@ -515,303 +485,85 @@ wow.init();</code></pre>
 </footer>
 
 <!-- SCRIPTS -->
-<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
-<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
-<script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/js/debouncer.js" ></script>
-<script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/js/main.js" ></script>
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":200})
+    NProgress.start()
+    document.addEventListener('DOMContentLoaded', function() {
+      window.NProgress && window.NProgress.inc();
+    })
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.6/js/debouncer.js" ></script>
+<script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.6/js/events.js" ></script>
+<script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.6/js/plugins.js" ></script>
 
 <!-- Plugins -->
 
 
   
-    <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/js/lazyload.js" ></script>
+    <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.6/js/lazyload.js" ></script>
   
 
 
 
   
-    
-  
 
 
 
-  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
-  <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/js/clipboard-use.js" ></script>
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
 
 
 
-  <script defer>
-  (function () {
-    // 查询存储的记录
-    function getRecord(Counter, target) {
-      return new Promise(function (resolve, reject) {
-        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
-          .then(resp => resp.json())
-          .then(({results, code, error}) => {
-            if (code === 401) {
-              throw error;
-            }
-            if (results && results.length > 0) {
-              var record = results[0];
-              resolve(record);
-            } else {
-              Counter('post', '/classes/Counter', {target, time: 0})
-                .then(resp => resp.json())
-                .then((record, error) => {
-                  if (error) {
-                    throw error;
-                  }
-                  resolve(record);
-                }).catch(error => {
-                console.error('Failed to create', error);
-                reject(error);
-              });
-            }
-          }).catch((error) => {
-          console.error('LeanCloud Counter Error:', error);
-          reject(error);
-        });
-      })
-    }
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
 
-    // 发起自增请求
-    function increment(Counter, incrArr) {
-      return new Promise(function (resolve, reject) {
-        Counter('post', '/batch', {
-          "requests": incrArr
-        }).then((res) => {
-          res = res.json();
-          if (res.error) {
-            throw res.error;
-          }
-          resolve(res);
-        }).catch((error) => {
-          console.error('Failed to save visitor count', error);
-          reject(error);
-        });
-      });
-    }
 
-    // 构建自增请求体
-    function buildIncrement(objectId) {
-      return {
-        "method": "PUT",
-        "path": `/1.1/classes/Counter/${ objectId }`,
-        "body": {
-          "time": {
-            '__op': 'Increment',
-            'amount': 1
-          }
-        }
-      }
-    }
 
-    // 校验是否为有效的 UV
-    function validUV() {
-      var key = 'LeanCloud_UV_Flag';
-      var flag = localStorage.getItem(key);
-      if (flag) {
-        // 距离标记小于 24 小时则不计为 UV
-        if (new Date().getTime() - parseInt(flag) <= 86400000) {
-          return false;
-        }
-      }
-      localStorage.setItem(key, new Date().getTime().toString());
-      return true;
-    }
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
 
-    function addCount(Counter) {
-      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
-      var getterArr = [];
-      var incrArr = [];
 
-      // 请求 PV 并自增
-      var pvCtn = document.querySelector('#leancloud-site-pv-container');
-      if (pvCtn || enableIncr) {
-        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
-          incrArr.push(buildIncrement(record.objectId))
-          var ele = document.querySelector('#leancloud-site-pv');
-          if (ele) {
-            ele.innerText = record.time + 1;
-            if (pvCtn) {
-              pvCtn.style.display = 'inline';
-            }
-          }
-        });
-        getterArr.push(pvGetter);
-      }
 
-      // 请求 UV 并自增
-      var uvCtn = document.querySelector('#leancloud-site-uv-container');
-      if (uvCtn || enableIncr) {
-        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
-          var vuv = validUV();
-          vuv && incrArr.push(buildIncrement(record.objectId))
-          var ele = document.querySelector('#leancloud-site-uv');
-          if (ele) {
-            ele.innerText = record.time + (vuv ? 1 : 0);
-            if (uvCtn) {
-              uvCtn.style.display = 'inline';
-            }
-          }
-        });
-        getterArr.push(uvGetter);
-      }
-
-      // 如果是文章，请求文章的浏览数，并自增
-      if ('true' === 'true') {
-        var viewCtn = document.querySelector('#leancloud-post-views-container');
-        if (viewCtn || enableIncr) {
-          var target = decodeURI('/2019/06/26/chao-hao-yong-de-wow.js-animate.css-wang-zhan-dong-hua-te-xiao/');
-          var viewGetter = getRecord(Counter, target).then((record) => {
-            incrArr.push(buildIncrement(record.objectId))
-            if (viewCtn) {
-              var ele = document.querySelector('#leancloud-post-views');
-              if (ele) {
-                ele.innerText = (record.time || 0) + 1;
-                viewCtn.style.display = 'inline';
-              }
-            }
-          });
-          getterArr.push(viewGetter);
-        }
-      }
-
-      // 如果启动计数自增，批量发起自增请求
-      if (enableIncr) {
-        Promise.all(getterArr).then(() => {
-          incrArr.length > 0 && increment(Counter, incrArr);
-        })
-      }
-    }
-
-    var app_id = 'hF3ws2eL3Tjy0LaPpL7tAAwh-gzGzoHsz'
-    var app_key = 'JCm51YPepluhpKtsAnF50gl3'
-    var server_url = 'https://hf3ws2el.lc-cn-n1-shared.com'
-
-    function fetchData(api_server) {
-      var Counter = (method, url, data) => {
-        return fetch(`${ api_server }/1.1${ url }`, {
-          method,
-          headers: {
-            'X-LC-Id': app_id,
-            'X-LC-Key': app_key,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-
-      addCount(Counter);
-    }
-
-    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
-
-    if (api_server) {
-      fetchData(api_server);
-    } else {
-      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
-        .then(resp => resp.json())
-        .then(({api_server}) => {
-          fetchData('https://' + api_server);
-        });
-    }
-  })();
-</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
 
 
 
 
+  <script defer src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.6/js/leancloud.js" ></script>
 
 
-  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
   <script>
-    $(document).ready(function () {
-      var boardCtn = $('#board-ctn');
-      var boardTop = boardCtn.offset().top;
-
-      tocbot.init({
-        tocSelector: '#tocbot',
-        contentSelector: '#post-body',
-        headingSelector: 'h1,h2,h3,h4,h5,h6',
-        linkClass: 'tocbot-link',
-        activeLinkClass: 'tocbot-active-link',
-        listClass: 'tocbot-list',
-        isCollapsedClass: 'tocbot-is-collapsed',
-        collapsibleClass: 'tocbot-is-collapsible',
-        collapseDepth: 0,
-        scrollSmooth: true,
-        headingsOffset: -boardTop
-      });
-      if ($('.toc-list-item').length > 0) {
-        $('#toc').css('visibility', 'visible');
-      }
-    });
-  </script>
-
-
-
-  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
-  <script>
-    var typed = new Typed('#subtitle', {
-      strings: [
-        '  ',
-        "超好用的WOW.js+Animate.css网站动画特效&nbsp;",
-      ],
-      cursorChar: "_",
-      typeSpeed: 70,
-      loop: false,
-    });
-    typed.stop();
-    $(document).ready(function () {
-      $(".typed-cursor").addClass("h2");
-      typed.start();
-    });
-  </script>
-
-
-
-  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
-  <script>
-    anchors.options = {
-      placement: "right",
-      visible: "hover",
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
       
-    };
-    var el = "h1,h2,h3,h4,h5,h6".split(",");
-    var res = [];
-    for (item of el) {
-      res.push(".markdown-body > " + item)
-    }
-    anchors.add(res.join(", "))
+      typing(title)
+      
+    })(window, document);
   </script>
 
 
 
-  <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.4/js/local-search.js" ></script>
+  <script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.6/js/local-search.js" ></script>
   <script>
-    var path = "/local-search.xml";
-    var inputArea = document.querySelector("#local-search-input");
-    inputArea.onclick = function () {
-      searchFunc(path, 'local-search-input', 'local-search-result');
-      this.onclick = null
-    }
-  </script>
-
-
-
-  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-  <script>
-    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
-      function () {
-        var element = document.createElement('a');
-        $(element).attr('data-fancybox', 'images');
-        $(element).attr('href', $(this).attr('src'));
-        $(this).wrap(element);
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
       }
-    );
+    })()
   </script>
 
 
@@ -838,6 +590,11 @@ wow.init();</code></pre>
   
 
 
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="https://cdn.jsdelivr.net/gh/Godbn/CDN@latest/fluid/1.8.6/js/boot.js" ></script>
 
 
 
