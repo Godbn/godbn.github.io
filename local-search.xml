@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>MT破解之轻颜相机</title>
+    <link href="/2021/01/02/mt-po-jie-zhi-qing-yan-xiang-ji/"/>
+    <url>/2021/01/02/mt-po-jie-zhi-qing-yan-xiang-ji/</url>
+    
+    <content type="html"><![CDATA[<p>上一篇写的是破解蜂毒免费小说，但是这个相对来说就简单很多。</p><a id="more"></a><h2 id="不足之处"><a href="#不足之处" class="headerlink" title="不足之处"></a>不足之处</h2><p>相机一些功能需要vip才能使用</p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>就是在判断是否是 <code>vip</code> 中添加 <code>const/4 v0, 0x1</code> </p><p>以下图示：</p><div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="https://cdn.pwdsec.top/qiniu/20210102230909.png" alt="图示-1"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="https://cdn.pwdsec.top/qiniu/20210102230916.png" alt="图示-2"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="https://cdn.pwdsec.top/qiniu/20210102230920.png" alt="图示-3"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="https://cdn.pwdsec.top/qiniu/20210102230928.png" alt="图示-4"></div></div></div><h2 id="成品"><a href="#成品" class="headerlink" title="成品"></a>成品</h2><blockquote><p>(蓝奏云)[<a href="https://wws.lanzous.com/ijrY6jyxs0j]">https://wws.lanzous.com/ijrY6jyxs0j]</a></p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>Tools</category>
+      
+      <category>MT管理器</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>MT管理器</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>MT破解之蜂毒免费小说</title>
     <link href="/2021/01/02/mt-po-jie-zhi-feng-du-mian-fei-xiao-shuo/"/>
     <url>/2021/01/02/mt-po-jie-zhi-feng-du-mian-fei-xiao-shuo/</url>
